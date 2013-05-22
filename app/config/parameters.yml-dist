@@ -1,0 +1,16 @@
+parameters:
+    #Configurar aqui
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: eventioz_2
+    database_user: NOMBRE_DE_USUARIO
+    database_password: PASSWORD     
+  
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: es
+    secret: 23ec141a07993c716d9d8cfad8a2b5b24207b2e3
+    database_path: null
