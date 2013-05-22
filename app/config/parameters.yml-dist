@@ -3,7 +3,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: null
-    database_name: eventioz_2
+    database_name: NOMBRE_BD
     database_user: NOMBRE_DE_USUARIO
     database_password: PASSWORD     
   
