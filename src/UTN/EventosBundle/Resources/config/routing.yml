@@ -1,0 +1,8 @@
+UTNEventosBundle_evento:
+    resource: "@UTNEventosBundle/Resources/config/routing/evento.yml"
+    prefix:   /evento
+
+UTNEventosBundle_inscripcion:
+        resource: "@UTNEventosBundle/Resources/config/routing/inscripcion.yml"
+        prefix:   /inscripcion
+

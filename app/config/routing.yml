@@ -1,0 +1,19 @@
+
+utn_eventos:
+    resource: "@UTNEventosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+utn_bundle:
+    resource: "@UTNEventosBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+inscribirse:
+    pattern:  /inscribirse
+    defaults: { _controller: "UTNEventosBundle:Inscripcion:new" }
+
+
+inscripcion_create:
+    pattern:  /guardar-inscripcion
+    defaults: { _controller: "UTNEventosBundle:Inscripcion:create" }
+    requirements: { _method: post }

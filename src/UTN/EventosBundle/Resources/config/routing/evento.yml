@@ -1,0 +1,30 @@
+evento:
+    pattern:  /
+    defaults: { _controller: "UTNEventosBundle:Evento:index" }
+
+evento_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "UTNEventosBundle:Evento:show" }
+
+evento_new:
+    pattern:  /new
+    defaults: { _controller: "UTNEventosBundle:Evento:new" }
+
+evento_create:
+    pattern:  /create
+    defaults: { _controller: "UTNEventosBundle:Evento:create" }
+    requirements: { _method: post }
+
+evento_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "UTNEventosBundle:Evento:edit" }
+
+evento_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "UTNEventosBundle:Evento:update" }
+    requirements: { _method: post|put }
+
+evento_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "UTNEventosBundle:Evento:delete" }
+    requirements: { _method: post|delete }

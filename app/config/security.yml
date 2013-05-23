@@ -22,21 +22,23 @@ security:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        login:
-            pattern:  ^/demo/secured/login$
-            security: false
+        #login:
+        #    pattern:  ^/demo/secured/login$
+        #    security: false
 
         secured_area:
-            pattern:    ^/demo/secured/
+            pattern:    ^/
             form_login:
-                check_path: _security_check
-                login_path: _demo_login
+                check_path: home
+                login_path: /
+                default_target_path: /admin
             logout:
-                path:   _demo_logout
-                target: _demo
-            #anonymous: ~
+                path:   /logout
+                target: /
+            anonymous: ~
+
             #http_basic:
             #    realm: "Secured Demo Area"
 
     access_control:
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/admin, roles: ROLE_ADMIN}
